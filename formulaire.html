@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="liste.css" />
+    <title>Formulaire de réservation - Liste de naissance</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formulaire de réservation</h1>
+      <p>
+        Vous êtes sur le formulaire de réservation de la liste de naissance de
+        Manon, laissez vous guider !
+      </p>
+    </header>
+    <main>
+      <form action="liste.html">
+        <div class="nomprenom">
+          <div>
+            <label for="lastnameinput">Nom</label>
+            <input type="text" name="lastname" id="lastnameinput" />
+          </div>
+          <div>
+            <label for="firstnameinput">Prénom</label>
+            <input type="text" name="firstname" id="firstnameinput" />
+          </div>
+        </div>
+        <div id="anonimisation">
+          <label>Je souhaite faire mon cadeau de manière anonyme</label>
+          <div id="anony_box">
+            <input type="radio" name="choix_anonyme" id="anonyme" />
+            <label for="anonyme">Oui</label>
+            <input type="radio" name="choix_anonyme" id="non_anonyme" checked />
+            <label for="non_anonyme">Non</label>
+          </div>
+        </div>
+        <h2>Quel cadeau souhaitez-vous offrir à Manon ?</h2>
+        <div id="choix_cadeaux">
+          <div class="categorie_cadeaux">
+            <p>Vie pratique</p>
+            <div>
+              <input type="checkbox" name="porte-bebe" id="porte-bebe" />
+              <label for="porte-bebe">Porte bébé</label>
+            </div>
+            <div>
+              <input type="checkbox" name="poussette" id="poussette" />
+              <label for="poussette">Poussette</label>
+            </div>
+          </div>
+          <div class="categorie_cadeaux">
+            <p>Eveil</p>
+            <div>
+              <input type="checkbox" name="hochet" id="hochet" />
+              <label for="hochet">Hochet</label>
+            </div>
+            <div>
+              <input type="checkbox" name="veilleuse" id="veilleuse" />
+              <label for="veilleuse">Veilleuse</label>
+            </div>
+            <div>
+              <input type="checkbox" name="mobile" id="mobile" />
+              <label for="mobile">Mobile</label>
+            </div>
+          </div>
+          <div class="categorie_cadeaux">
+            <p>Alimentation</p>
+            <div>
+              <input type="checkbox" name="biberon" id="biberon" />
+              <label for="biberon">Biberons</label>
+            </div>
+            <div>
+              <input type="checkbox" name="prep_biberon" id="prep_biberon" />
+              <label for="prep_biberon">Préparateur de biberons</label>
+            </div>
+          </div>
+          <div class="categorie_cadeaux">
+            <p>Chambre</p>
+            <div>
+              <input type="checkbox" name="lit" id="lit" />
+              <label for="lit">Lit à barreaux</label>
+            </div>
+            <div>
+              <input type="checkbox" name="draps" id="draps" />
+              <label for="draps">Set de draps</label>
+            </div>
+            <div>
+              <input type="checkbox" name="couverture" id="couverture" />
+              <label for="couverture">Couverture</label>
+            </div>
+          </div>
+          <div class="categorie_cadeaux">
+            <p>Toilette</p>
+            <div>
+              <input type="checkbox" name="sortiedb" id="sortiedb" />
+              <label for="sortiedb">Sortie de bain</label>
+            </div>
+            <div>
+              <input type="checkbox" name="trousse" id="trousse" />
+              <label for="trousse">Trousse de toilette</label>
+            </div>
+            <div>
+              <input type="checkbox" name="thermo" id="thermo" />
+              <label for="thermo">Thermomètre</label>
+            </div>
+            <div>
+              <input type="checkbox" name="table_langer" id="table_langer" />
+              <label for="table_langer">Table à langer</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="matelat_langer"
+                id="matelat_langer"
+              />
+              <label for="matelat_langer">Matelat de table à langer</label>
+            </div>
+          </div>
+          <div class="categorie_cadeaux">
+            <p>Habillage et accessoire</p>
+            <div>
+              <input type="checkbox" name="bodies" id="bodies" />
+              <label for="bodies">Bodies</label>
+            </div>
+            <div>
+              <input type="checkbox" name="pyjamas" id="pyjamas" />
+              <label for="pyjamas">Pyjamas</label>
+            </div>
+            <div>
+              <input type="checkbox" name="chaussettes" id="chaussettes" />
+              <label for="chaussettes">Chaussettes</label>
+            </div>
+            <div>
+              <input type="checkbox" name="bavoirs" id="bavoirs" />
+              <label for="bavoirs">Bavoirs</label>
+            </div>
+          </div>
+        </div>
+        <div id="votre_message">
+          <label for="message">Votre message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="100"
+            rows="8"
+            placeholder="Souhaitez-vous laisser un petit message pour Manon ?"
+          ></textarea>
+        </div>
+        <div id="votre_mail">
+          <label for="usermail">Votre adresse mail :</label>
+          <input
+            type="email"
+            name="mail"
+            id="usermail"
+            placeholder="example@mail.com"
+            required
+          />
+        </div>
+        <div id="submit_buton">
+          <label for="submitform"></label>
+          <input type="submit" value="Envoyer" />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>Retourner à la liste de naissance :</p>
+      <a href="liste.html">Liste de naissance</a>
+    </footer>
+  </body>
+</html>
